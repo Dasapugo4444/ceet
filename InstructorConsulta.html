@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<title>INSTRUCTOR</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/icons/lupa-para-buscar.png">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #05D954;}
+#main {margin-left: 120px}
+body {background-image:url(images/fondo.jpg); background-size: cover}
+@media only screen and (max-width: 600px) {#main {margin-left: }}
+</style>
+<body background="images/fondo.jpg" class="w3-border-green">
+
+<!-- NAVEGATION BAR -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!--IMAGEN-->
+
+  <a style="text-decoration:none" href="Consultar horarios de instructores.html" class="active">
+    <i class="fa fa-search w3-xxlarge"></i>
+    <p>Consultar Horario</p>
+  </a>
+  <a href="InstructorNovedades.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Reportar Novedades</p>
+  </a>
+</nav>
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#consultar horarios" class="w3-bar-item w3-button" style="width:25% !important">Consultar Horario</a>
+    <a href="#reportar novedades" class="w3-bar-item w3-button" style="width:25% !important">Reportar Novedades</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+
+  <header class="w3-container w3-padding-32 w3-center w3-transparent" id="INSTRUCTOR">
+    <h1>Consultar Horario</h1>
+    <br>
+    <head>
+<style>
+.button {
+    background-color: #05D954;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+<input type="button" class="button" value="Consultar Fichas Asignadas"><br><br>
+<input type="button" class="button" value="Consultar Horario En General"><br><br>
+<form action="/action_page.php">
+  Ficha:
+  <input type="text" name="Ficha" value=" ">
+  <button>Consultar</button>
+  </form>
+</body>
+  </header>
+</div>
+</body>
+</html>

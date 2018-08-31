@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<title>Editar Horario Fichas</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" type="image/png" href="images/icons/horario.png">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+.w3-sidebar {width: 120px;background: #05D954;}
+#main {margin-left: 120px}
+body {background-image:url(images/fondo.jpg); background-size: cover}
+@media only screen and (max-width: 600px) {#main {margin-left: }}
+
+ img {
+    position: relative;
+    top: -510px;
+    left: 480px;
+    width: 150px;
+    height: 150px;
+  }
+
+#Instructor {
+        position:absolute;
+        top: 27%;
+        left: 49%;
+}
+
+ #Jornada {
+        position:absolute;
+         top: 27%;
+        left: 70%;
+        width: 7%;
+        background: #FF9333;
+}
+
+ #Ficha {
+        position:absolute;
+         top: 27%;
+        left: 32%;
+        width: 7%;
+        background: #FF9333;
+}
+
+ #Ambiente{
+        position:absolute;
+         top: 40%;
+        left: 32%;
+}
+
+ #Trimestre {
+        position:absolute;
+         top: 40%;
+        left: 50%;
+}
+
+ #Programa{
+        position:absolute;
+         top: 40%;
+        left: 70%;
+        width: 7%;
+        background: #FF9333;
+}
+
+#Crear {
+        position:absolute;
+        top: 95%;
+        left: 40%;
+        background: #05D954;
+}
+
+#Cancelar {
+        position:absolute;
+        top: 95%;
+        left: 60%;
+        background: #05D954;
+}
+
+ #Competencias {
+        position:absolute;
+        top: 65%;
+        left: 30%;
+        width: 170px;
+        height: 130px;
+}
+
+#Actividades {
+        position:absolute;
+        top: 65%;
+        left: 44%;
+        width: 170px;
+        height: 130px;
+}
+
+#Fases{
+  position: absolute;
+        top: 430px;
+        left: 785px;
+        width: 170px;
+        height: 130px;
+}
+
+#Resultado{
+  position: absolute;
+        top: 430px;
+        left: 975px;
+        width: 170px;
+        height: 130px;
+}
+
+#Primero{
+  position: relative;
+        top: -185px;
+        left: -260px;
+}
+
+#Segundo{
+  position: relative;
+        top: -215px;
+        left: -3px
+}
+
+#Tercero{
+  position: relative;
+        top: -235px;
+        left: 260px
+}
+
+#Cuarto{
+  position: relative;
+        top: -167px;
+        left: -247px;
+}
+
+#Quinto{
+  position: relative;
+        top: -187px;
+        left: -10px;
+}
+
+#Sexto{
+  position: relative;
+        top: -210px;
+        left: 265px;
+}
+
+#Septimo{
+  position: relative;
+        top: -80px;
+        left: -250px;
+}
+
+#Octavo{
+  position: relative;
+        top: -100px;
+        left: -50px;
+}
+
+#Noveno{
+  position: relative;
+        top: -125px;
+        left: 140px;
+}
+
+#Decimo{
+  position: relative;
+        top: -150px;
+        left: 325px;
+}
+
+#Plantilla{
+  position: relative;
+        top: 170px;
+        left: -223px;
+}
+
+</style>
+<body background="images/fondo.jpg" class="w3-border-green">
+
+<!-- NAVEGATION BAR -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!--IMAGEN-->
+
+   <a href="GestionarFichas1.html" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-file w3-xxlarge"></i>
+    <p>Gestionar Ficha</p>
+  </a>
+  <a href="Crear horario instructor.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>Gestionar Instructor</p>
+  </a>
+  <a href="ambientes gestion.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-refresh w3-xxlarge"></i>
+    <p>Gestionar Ambiente</p>
+  </a>
+  <a href="Gestionar horario.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-book w3-xxlarge"></i>
+    <p>Gestionar Horario</p>
+  </a>
+	<a href="Consultar horarios.html" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-search w3-xxlarge"></i>
+    <p>Consultar Horarios</p>
+  </a>
+</nav>
+
+<!-- Navbar on small screens (Hidden on medium and large screens) -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#gestionar fichas" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Fichas</a>
+    <a href="#gestionar instructor" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Instructor</a>
+    <a href="#gestionar ambientes" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Ambientes</a>
+    <a href="#gestionar horarios" class="w3-bar-item w3-button" style="width:25% !important">Gestionar Horarios</a>
+	  <a href="#consultar horarios" class="w3-bar-item w3-button" style="width:25% !important">Consultar Horarios</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- GESTIONAR FICHAS-->
+  <header class="w3-container w3-padding-32 w3-center w3-transparent" id="Gestionar Fichas">
+   <h1>Editar Horario Fichas</h1>
+
+  <form action="/action_page.php">
+  <select id="Instructor" name="cars">
+ <br>
+    <option value="Seleccione">Seleccione</option>
+    <option value="Roger Londoño">Roger Londoño</option>
+    <option value="Miguel Lopez">Miguel Lopez</option>
+    <option value="Heran Rojas">Hernan Rojas</option>
+  </select>
+  <br>
+  <br>
+
+ <input id="Jornada" type="button" value="Diurna">
+
+ <input id="Ficha" type="button" value="1566614">
+
+<a id="Plantilla" href="https://www.w3schools.com/html/">*Plantilla de horarios</a>
+
+<form action="/action_page.php">
+  <select id="Ambiente" name="cars" >
+    <option value="Seleccione">Seleccione</option>
+    <option value="101">101</option>
+    <option value="102">102</option>
+    <option value="103">103</option>
+    <option value="201">201</option>
+    <option value="202">202</option>
+    <option value="203">203</option>
+    <option value="301">301</option>
+    <option value="302">302</option>
+    <option value="303">303</option>
+    <option value="401">401</option>
+    <option value="402">402</option>
+    <option value="403">403</option>
+  </select>
+
+  <select id="Trimestre" name="cars" >
+    <option value="Seleccione">Seleccione</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select>
+
+<br>
+<input id="Programa" type="button" value="ADSI">
+
+<br>
+<input id="Competencias" type="text" name="Competencias">
+
+<br>
+<input id="Actividades" type="text" name="Actividades">
+
+<br>
+<input id="Fases" type="text" name="Fases">
+
+<br>
+<input id="Resultado" type="text" name="Resultado">
+
+<br>
+<input id="Crear" type="button" value="Aceptar" style="width: 100px; height: 40px">
+
+<br>
+<input id="Cancelar" type="button" value="Cancelar" style="width: 100px; height: 40px">
+</form>
+<br>
+
+<div id="Primero">
+Ficha
+</div>
+
+<div id="Segundo">
+Instructor
+</div>
+
+<div id="Tercero">
+Jornada
+</div>
+
+<div id="Cuarto">
+Ambiente
+</div>
+
+<div id="Quinto">
+Trimestre
+</div>
+
+<div id="Sexto">
+Programa
+</div>
+
+<div id="Septimo">
+Competencias
+</div>
+
+<div id="Octavo">
+Actividades
+</div>
+
+<div id="Noveno">
+Fases
+</div>
+
+<div id="Decimo">
+Resultado
+</div>
+
+    <img src="images/logo2.png">
+
+</body>
+</html>
